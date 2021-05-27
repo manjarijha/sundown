@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+/**/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/**/
+body
+{
+    background: linear-gradient(#2b1055,#7597de);
+    min-height: 100vh;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo
+{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+header ul
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+header ul li
+{
+    margin-right: 20px;
+    list-style: none;
+
+}
+header ul li a 
+{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    font-size: 16px;
+}
+header ul li a:hover,
+header ul li a.bg
+{
+    background-color: white;
+    color: #2b1055;
+    transition: 0.5s;
+    font-weight: 500;
+    border-radius: 15px;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522,transparent);
+    z-index: 1000;
+
+}
+section img
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+section img#moon
+{
+mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+z-index: 10;
+}
+#text
+{
+    position: absolute;
+    color: white;
+    right: -200px;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    z-index: 9;
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 20px ;
+    border-radius: 40px;
+    background-color: white;
+    color: #2b1055;
+    font-size: 1.3em;
+    z-index: 9;
+    font-weight: 500;
+    transform: translateY(100px);
+}
+#btn:hover
+{
+    background-color: #1c0522;
+    color: white;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+.sec
+{
+    position: relative;
+    background-color: #1c0522;
+    padding: 100px;
+    
+}
+.sec h2
+{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.sec p
+{
+    color: white;
+    font-size: 1em;
+}
+
+@media(max-width:700px)
+{
+    section
+    {
+        overflow: hidden;
+    }
+    header ul li a
+    {
+        display: none;
+    }
+    header 
+    {
+        margin-right: 110px;
+        color: white;
+        
+    }
+
+    h2 #text
+    {   
+        text-align: center;
+        display: flex;
+        max-width: 50px;
+        font-size: 20px;
+    }
+    .sec
+    {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
